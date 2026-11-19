@@ -116,25 +116,41 @@ footer{background:#0f172a;color:#94a3b8;text-align:center;padding:40px 20px;font
 <h2 class="tit">Solicita tu Cotización</h2>
 <p class="sub">Completa el formulario y nuestro equipo comercial te responderá a la brevedad.</p>
 <div class="fbox">
-<form action="https://formsubmit.co" method="POST">
-<input type="hidden" name="_subject" value="Nueva cotización Web">
-<input type="hidden" name="_captcha" value="false">
-<div class="fg"><label>Nombre de contacto o Empresa *</label><input type="text" name="empresa" required></div>
-<div class="fg"><label>Correo Corporativo *</label><input type="email" name="email" required></div>
-<div class="fg"><label>Teléfono / WhatsApp *</label><input type="tel" name="telefono" required></div>
-<div class="fg"><label>Línea de interés</label>
-<select name="linea">
-<option value="Administrativa">Línea Administrativa</option>
-<option value="Operativa e Industrial">Operativa e Industrial</option>
-<option value="Calzado y EPP">Calzado y Seguridad (EPP)</option>
-<option value="Salud y Médica">Línea Salud y Médica</option>
-<option value="Restaurantes y Gastronomía">Restaurantes y Gastronomía</option>
-<option value="Aseo y Servicios Generales">Aseo y Servicios Generales</option>
-<option value="Varias líneas">Varias líneas / Cotización mixta</option>
-</select>
-</div>
-<div class="fg"><label>Detalle de la dotación (Cantidades, prendas, ciudad) *</label><textarea name="mensaje" rows="4" required></textarea></div>
-<button type="submit" class="bsub">Enviar Solicitud de Cotización</button>
+<form action="https://web3forms.com" method="POST">
+    <input type="hidden" name="access_key" value="07bdeda2-0c7e-406d-bdba-8e0d5fc1a250">
+    <input type="hidden" name="subject" value="Nueva Cotizacion Web - Dotaciones Nacional SAS">
+    <input type="hidden" name="from_name" value="Web Dotaciones Nacional">
+    <input type="checkbox" name="botcheck" style="display: none;">
+
+    <div class="fg">
+        <label>Nombre de contacto o Empresa *</label>
+        <input type="text" name="empresa" placeholder="Ej. Constructora ABC SAS" required>
+    </div>
+    <div class="fg">
+        <label>Correo Corporativo *</label>
+        <input type="email" name="email" placeholder="compras@empresa.com" required>
+    </div>
+    <div class="fg">
+        <label>Teléfono / WhatsApp *</label>
+        <input type="tel" name="telefono" placeholder="Ej. 300 123 4567" required>
+    </div>
+    <div class="fg">
+        <label>Línea de interés</label>
+        <select name="linea">
+            <option value="Administrativa">Línea Administrativa</option>
+            <option value="Operativa e Industrial">Operativa e Industrial</option>
+            <option value="Calzado y EPP">Calzado y Seguridad (EPP)</option>
+            <option value="Salud y Médica">Línea Salud y Médica</option>
+            <option value="Restaurantes y Gastronomía">Restaurantes y Gastronomía</option>
+            <option value="Aseo y Servicios Generales">Aseo y Servicios Generales</option>
+            <option value="Varias líneas">Varias líneas / Cotización mixta</option>
+        </select>
+    </div>
+    <div class="fg">
+        <label>Detalle de la dotación (Cantidades, prendas, ciudad) *</label>
+        <textarea name="mensaje" rows="4" placeholder="Necesitamos cotizar..." required></textarea>
+    </div>
+    <button type="submit" class="bsub">Enviar Solicitud de Cotización</button>
 </form>
 </div>
 </section>
